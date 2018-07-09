@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+@var a = 2;
+
+@var b = 3;
+
+@var result = a+b;
+
+@var array = [1,2,3];
+
+<body>
+
+hello 2+3=${result}
+
+<hr>
+@for (i in array) {
+    ${i}
+@}
+<hr>
+${[1,2,3]}
+<hr>
+<!--输出一个json map，} 需要加上\-->
+${ {key:1,value:2 \}  }
+<hr>
+<#simpleTag attr="123456"></#simpleTag>
+<hr>
+自定义标签输出内容：<#simpleTag attr="123456"></#simpleTag>
+</body>
+</html>
